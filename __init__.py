@@ -4,8 +4,8 @@
 # Copyright notice
 # ----------------
 #
-# Copyright (C) 2013-2014 Daniel Jung
-# Contact: djungbremen@gmail.com
+# Copyright (C) 2013-2023 Daniel Jung
+# Contact: proggy-contact@mailbox.org
 #
 # This program is free software; you can redistribute it and/or modify it
 # under the terms of the GNU General Public License as published by the Free
@@ -31,13 +31,14 @@ License (PSF license).
 
 "Python" is a registered trademark of the Python Software Foundation."""
 
+__version__ = '0.1.1'
 
 def columnize(slist, displaywidth=80):
     """Format a list of strings in a compact set of columns of variable
     width.
 
-    Based on cmd.Cmd.columnize from the Python(R) standard library."""
-    # 2013-07-12 - 2013-07-12
+    Based on cmd.Cmd.columnize from the Python(R) standard library.
+    """
     if not slist:
         return ''
     out = ''
